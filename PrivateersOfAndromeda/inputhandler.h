@@ -17,10 +17,9 @@
 
 #include <glfw3.h>
 
-class InputHandler
-{
+class InputHandler {
 public:
-  //Constructors, Init, and Des tructor
+  //Constructors, Init, and Destructor
   InputHandler(void);
   ~InputHandler(void);
   //Methods
