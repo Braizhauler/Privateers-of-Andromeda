@@ -27,16 +27,22 @@
     <ClCompile Include="spriteatlas.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="privateersofandromeda.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="$template$.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="inputhandler.cc">
+    <ClCompile Include="gamestatemanager.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gamestatemanager.cc">
+    <ClCompile Include="main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamestate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updateable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,13 +59,16 @@
     <ClInclude Include="$template$.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inputhandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="gamestate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gamestatemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="updateable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renderable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

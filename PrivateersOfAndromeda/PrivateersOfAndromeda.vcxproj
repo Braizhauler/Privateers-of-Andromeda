@@ -120,21 +120,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="$template$.cc" />
+    <ClCompile Include="renderable.cpp" />
+    <ClCompile Include="gamestate.cc" />
     <ClCompile Include="gamestatemanager.cc" />
-    <ClCompile Include="inputhandler.cc" />
     <ClCompile Include="logfile.cc" />
     <ClCompile Include="mywindowwrapper.cc" />
-    <ClCompile Include="privateersofandromeda.cc" />
+    <ClCompile Include="main.cc" />
     <ClCompile Include="spriteatlas.cc" />
+    <ClCompile Include="updateable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$template$.h" />
+    <ClInclude Include="renderable.h" />
     <ClInclude Include="gamestate.h" />
     <ClInclude Include="gamestatemanager.h" />
-    <ClInclude Include="inputhandler.h" />
     <ClInclude Include="logfile.h" />
     <ClInclude Include="mywindowwrapper.h" />
     <ClInclude Include="spriteatlas.h" />
+    <ClInclude Include="updateable.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TextureFragmentShader.fragmentshader" />

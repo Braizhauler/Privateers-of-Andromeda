@@ -15,8 +15,7 @@
 #ifndef $TEMPLATE$_H
 #define $TEMPLATE$_H
 
-class $Template$
-{
+class $Template$ {
 public:
   //Constructors and Destructor
   $Template$(void);
