@@ -1,4 +1,4 @@
-/**********************************************************
+/*******************************************************************************
 * File: gamestatemanager.h
 * Author: Greg Howlett (GregTHowlett@Gmail.com)
 * Created: 2014 DEC 22
@@ -11,7 +11,7 @@
 *
 * © [2014] Dwarfholm.com
 * All Rights Reserved.
-************************************************************/
+*******************************************************************************/
 
 #ifndef GAME_STATE_MANAGER_H
 #define GAME_STATE_MANAGER_H
@@ -21,6 +21,8 @@
 #include <glfw3.h>
 
 #include "gamestate.h"
+#include "renderable.h"
+#include "updateable.h"
 
 class GameStateManager {
 public:
@@ -28,12 +30,13 @@ public:
   GameStateManager(void);
   ~GameStateManager(void);
   //Methods
-  GameState* Pop();
-  GameState* Peek();
-  void Push(GameState * new_state);
+  GameState Pop();
+  GameState Peek();
+  void Push(GameState new_state);
 
-  void Draw();
-  void Update();
+  void Render();
+  void Update(double elapsed_time_in_ms);
+
   void CursorPositionFunction(GLFWwindow * window,
                         double x_position,  //relative to left
                         double y_position); //relative to top
@@ -54,12 +57,11 @@ public:
                         int modifiers);
 
   //Accessors and Mutators
-  GameState * active_state();
 private:
   //Member Variables
-  std::stack<GameState> active_state_;
-  std::vector<GameState> active_renderables_;
-  std::vector<GameState> active_updatable_;
+  std::stack<GameState> current_state_;
+  std::vector<Renderable> active_renderables_;
+  std::vector<Updateable> active_updatable_;
 };
 
 

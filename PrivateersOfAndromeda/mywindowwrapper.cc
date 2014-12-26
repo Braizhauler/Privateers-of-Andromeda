@@ -1,4 +1,4 @@
-/**********************************************************
+/*******************************************************************************
 * File: spriteatlas.cc
 * Author: Greg Howlett (GregTHowlett@Gmail.com)
 * Created: 2014 DEC 19
@@ -7,7 +7,7 @@
 *
 * © [2014] Dwarfholm.com
 * All Rights Reserved.
-************************************************************/
+*******************************************************************************/
 
 #include "MyWindowWrapper.h"
 
@@ -72,7 +72,7 @@ void MyWindowWrapper::ProccessOSEvents()  {
 }
 
 void MyWindowWrapper::SwapBuffers() {
-		glfwSwapBuffers(window_);
+  glfwSwapBuffers(window_);
 }
 
 

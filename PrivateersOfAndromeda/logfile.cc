@@ -1,4 +1,4 @@
-/**********************************************************
+/*******************************************************************************
 * File: logfile.cc
 * Author: Greg Howlett (GregTHowlett@Gmail.com)
 * Created: 2014 DEC 19
@@ -7,7 +7,7 @@
 *
 * © [2014] Dwarfholm.com
 * All Rights Reserved.
-************************************************************/
+*******************************************************************************/
 
 #include "logfile.h"
 
@@ -80,6 +80,7 @@ const char * LogFile::LogLevelString(LogLevel log_level) const {
       break;
     }
     default: {
+      return "";
     }
   }
 }

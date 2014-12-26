@@ -1,4 +1,4 @@
-/*********************************************
+/*******************************************************************************
 * filename: main.cc
 * Author: Greg Howlett (GregTHowlett@Gmail.com)
 * Created: 2014 DEC 16
@@ -7,7 +7,7 @@
 *
 * © [2014] Dwarfholm.com
 * All Rights Reserved.
-*********************************************/
+*******************************************************************************/
 #ifndef PRIVATEERS_OF_ANDROMEDA_CC
 #define PRIVATEERS_OF_ANDROMEDA_CC
 
