@@ -50,7 +50,7 @@ int main (int num_of_arugments, char * argument_list[])  {
 
   MyWindowWrapper window(error_log);
 
-  window.Init( 640, 480, "Privateers of Andromeda");
+  window.Init( 640, 480, "Privateers of Andromeda\0");
 
   // Initialize GLEW
   if (glewInit() != GLEW_OK) {
