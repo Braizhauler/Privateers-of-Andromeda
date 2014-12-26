@@ -37,7 +37,7 @@ const bool MyWindowWrapper::Init(int width, int height, const char * title)  {
   height_ = height;
   size_t title_length = strlen(title);
   title_ = new char[title_length];
-  for (size_t i = 1;i<title_length;++i) {
+  for (size_t i = 0;i<=title_length;++i) {
     title_[i] = title[i];
   }
   //The last two parameters of glfwCreateWindow are:
